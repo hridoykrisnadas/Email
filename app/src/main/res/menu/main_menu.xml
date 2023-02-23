@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/attachmentId"
+        android:icon="@drawable/attachment"
+        android:title="Attachment"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/sendId"
+        android:icon="@drawable/send"
+        android:title="Send"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/settingId"
+        android:icon="@android:drawable/btn_plus"
+        android:title="Setting"
+        app:showAsAction="withText" />
+
+</menu>
