@@ -22,10 +22,12 @@
             android:textSize="16sp"/>
 
         <EditText
+            android:id="@+id/fromEtId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minHeight="40dp"
             android:background="@null"
+            android:focusableInTouchMode="false"
             android:paddingHorizontal="10dp"/>
     </LinearLayout>
     <View
@@ -48,10 +50,12 @@
             android:textSize="16sp"/>
 
         <EditText
+            android:id="@+id/toEtId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minHeight="40dp"
             android:background="@null"
+            android:inputType="textEmailAddress"
             android:paddingHorizontal="10dp"/>
     </LinearLayout>
     <View
@@ -60,12 +64,14 @@
         android:background="#BAB6B6"/>
 
     <EditText
+        android:id="@+id/subjectETId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="40dp"
         android:background="@null"
         android:hint="Subject"
         android:maxLength="250"
+        android:inputType="textEmailSubject"
         android:paddingVertical="10dp"
         android:paddingHorizontal="15dp"/>
 
@@ -76,6 +82,7 @@
 
 
     <EditText
+        android:id="@+id/messageEtId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="40dp"
