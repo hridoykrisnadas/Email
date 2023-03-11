@@ -58,7 +58,7 @@ public class JavaMailAPI extends AsyncTask<Void, Void, Void> {
 
         //Configuring properties for gmail
         //If you are not using gmail you may need to change the values
-        props.put("mail.smtp.host", "smtp.gmail.com");
+        props.put("mail.smtp.host", "productimageedit.com");
         props.put("mail.smtp.socketFactory.port", "587");
         props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
         props.put("mail.smtp.auth", "true");

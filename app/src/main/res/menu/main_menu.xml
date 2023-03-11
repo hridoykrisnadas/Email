@@ -13,9 +13,9 @@
         android:title="Send"
         app:showAsAction="ifRoom" />
     <item
-        android:id="@+id/settingId"
+        android:id="@+id/inboxId"
         android:icon="@android:drawable/btn_plus"
-        android:title="Setting"
+        android:title="Inbox"
         app:showAsAction="withText" />
 
 </menu>

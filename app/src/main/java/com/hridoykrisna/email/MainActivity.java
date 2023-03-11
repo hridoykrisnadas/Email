@@ -1,27 +1,22 @@
 package com.hridoykrisna.email;
 
-import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
-import android.net.Uri;
 import android.os.Bundle;
-import android.os.FileUtils;
-import android.provider.DocumentsContract;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.io.File;
 
 public class MainActivity extends AppCompatActivity {
 
     private String filename;
     private static final int REQUEST_CHOOSER = 1;
+    private static final int RESULT_OK = 1;
 
     //
     EditText fromEt, toEt, subjectEt, messageEt;
@@ -72,8 +67,8 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Send Selected", Toast.LENGTH_SHORT).show();
                 sentEmail();
                 return true;
-            case R.id.settingId:
-                Toast.makeText(getApplicationContext(), "Item 3 Selected", Toast.LENGTH_SHORT).show();
+            case R.id.inboxId:
+                Toast.makeText(getApplicationContext(), "Inbox Selected", Toast.LENGTH_SHORT).show();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
